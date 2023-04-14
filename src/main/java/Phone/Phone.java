@@ -1,9 +1,9 @@
 package Phone;
 
-public class Phone<T, V extends Number> implements ModulePhone{
+public class Phone<T, V extends Number> implements Tokens{
 
     String modelName;
-
+    String tokens;
     T id;
 
     V ram;
@@ -23,13 +23,24 @@ public class Phone<T, V extends Number> implements ModulePhone{
      * @param bc батарея
      * @param price цена
      */
-    public Phone(String modelName, T id, V ram, int core, int bc, int price) {
+    public Phone(String modelName, T id, V ram, int core, int bc, int price, String tokens) {
         this.modelName = modelName;
         this.id = id;
         this.ram = ram;
         this.core = core;
         this.bc = bc;
         this.price = price;
+        this.tokens = tokens;
+    }
+
+    @Override
+    public String getTokens() {
+        return tokens;
+    }
+
+    @Override
+    public void setTokens(String token) {
+        this.tokens = tokens;
     }
 
     @Override

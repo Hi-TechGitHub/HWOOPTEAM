@@ -18,11 +18,5 @@ public interface ModulePhone<T, V extends Number> {
 
     void setCore(int value);
 
-    int getPrice();
 
-    void setPrice(int value);
-
-    int getBatteryCapacity();
-
-    void setBatteryCapacity(int value);
 }

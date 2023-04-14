@@ -11,8 +11,8 @@ public class NextPhone extends Phone{
      * @param bc батарея
      * @param price цена
      */
-    public NextPhone(String modelName, Object id, Number ram, int core, int bc, int price) {
-        super(modelName, id, ram, core, bc, price);
+    public NextPhone(String modelName, Object id, Number ram, int core, int bc, int price, String tokens) {
+        super(modelName, id, ram, core, bc, price, tokens);
     }
 
 
@@ -24,6 +24,7 @@ public class NextPhone extends Phone{
                 ", RAM - " + ram +
                 ", CORE - " + core +
                 ", Батарея - " + bc +
-                ", Цена - " + price;
+                ", Цена - " + price +
+                ", токены - " + tokens;
     }
 }
